@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+input[type="text"] {
+  padding: 15px;
+  height: 50px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #fff;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+
+#wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+#content {
+  position: relative;
+  padding: 40px;
+  width: 500px;
+  height: 500px;
+  border: 14px solid #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 10px 0 rgba(44, 39, 56, 0.04);
+}
+#clock {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: right;
+}
+#login-form,
+#greeting {
+  margin-top: 40px;
+}
+#todo-form {
+  margin-top: 10px;
+}
+#todo-list-wrap {
+  padding-left: 15px;
+  height: 140px;
+  overflow: hidden;
+}
+#todo-list {
+  margin-top: 20px;
+  height: 100%;
+  overflow-y: scroll;
+}
+#todo-list li + li {
+  margin-top: 16px;
+}
+#todo-list li button {
+  margin-left: 15px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  line-height: 16px;
+}
+#todo-list::-webkit-scrollbar {
+  width: 4px;
+}
+#todo-list::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+#todo-list::-webkit-scrollbar-thumb {
+  background-color: #eaeaea;
+  border-radius: 100px;
+}
+#weather {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
